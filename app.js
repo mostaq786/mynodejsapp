@@ -1,7 +1,6 @@
 require('dotenv').config();
 var http = require('http'); 
 var fs = require('fs'); // to get data from html file 
-require("dotenv").config();
 // use port 3000 unless there exists a preconfigured port
 var port = process.env.PORT || 3000;
 
