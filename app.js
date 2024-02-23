@@ -1,3 +1,4 @@
+require('dotenv').config();
 var http = require('http'); 
 var fs = require('fs'); // to get data from html file 
 require("dotenv").config();
