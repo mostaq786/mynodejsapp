@@ -10,18 +10,7 @@ app.get('/', (req, res) => {
   setTimeout(() => {
     res.write('First response'); // Using res.write() instead of res.send()
 
-    fs.readFile("head.html", function (err, pgres) { 
-			if (err) 
-				res.write("HEAD.HTML NOT FOUND"); 
-			else { 
-				// The following 3 lines 
-				// are responsible for sending the html file 
-				// and ends the response process 
-				res.writeHead(200, { 'Content-Type': 'text/html' }); 
-				res.write(pgres); 
-				res.end(); 
-			} 
-		}); 
+    fs.readFile('head.html');
 
     // Trying to send another response after a delay
     setTimeout(() => {
