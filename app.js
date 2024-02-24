@@ -1,6 +1,6 @@
 // use port 3000 unless there exists a preconfigured port
-//require('dotenv').config();
-//var port = process.env.PORT || 8080;
+require('dotenv').config();
+var port = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
 
@@ -16,6 +16,6 @@ app.get('/', (req, res) => {
   }, 1000);
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(port, () => {
+  console.log('Server is running on port 8080');
 });
