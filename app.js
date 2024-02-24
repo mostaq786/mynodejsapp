@@ -1,16 +1,14 @@
-// use port 3000 unless there exists a preconfigured port
+// use port 8080 unless there exists a preconfigured port
 require('dotenv').config();
-var port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
-fs = require('fs');
+
 
 app.get('/', (req, res) => {
   // Simulating an asynchronous operation
   setTimeout(() => {
     res.write('First response'); // Using res.write() instead of res.send()
-
-    fs.readFile('head.html');
 
     // Trying to send another response after a delay
     setTimeout(() => {
