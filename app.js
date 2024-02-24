@@ -2,8 +2,8 @@ var http = require('http');
 var fs = require('fs'); // to get data from html file 
 // use port 3000 unless there exists a preconfigured port
 require('dotenv').config();
-var port = process.env.PORT || 8080;
-//const port = 8080;
+//var port = process.env.PORT || 8080;
+const port = 8080;
 
 
 http.createServer(function (req, res) { 
