@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
     // Trying to send another response after a delay
     setTimeout(() => {
-      res.end('Second response'); // Sending the second response
+      res.end('<br />Second response'); // Sending the second response
     }, 1000);
   }, 1000);
 });
