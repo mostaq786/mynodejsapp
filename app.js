@@ -4,7 +4,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/example', (req, res) => {
+app.get('/', (req, res) => {
   // Simulating an asynchronous operation
   setTimeout(() => {
     res.write('First response'); // Using res.write() instead of res.send()
