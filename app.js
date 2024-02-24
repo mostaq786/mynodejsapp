@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     // Trying to send another response after a delay
     setTimeout(() => {
       res.end('\nSecond response'); // Sending the second response
-    }, 1000);
+    }, 5000);
   }, 1000);
 });
 
