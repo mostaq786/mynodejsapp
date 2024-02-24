@@ -2,7 +2,9 @@
 var http = require('http'); 
 var fs = require('fs'); // to get data from html file 
 // use port 3000 unless there exists a preconfigured port
-var port = process.env.PORT || 3000;
+//var port = process.env.PORT || 3000;
+const port = 8080;
+
 
 http.createServer(function (req, res) { 
 	res.writeHead(200, { 'Content-Type': 'text/html' }); 
@@ -41,5 +43,5 @@ http.createServer(function (req, res) {
 	} 
 	
 }).listen(port, function () { 
-	console.log("SERVER STARTED PORT: 3000"); 
+	console.log("SERVER STARTED PORT: 8080"); 
 }); 
