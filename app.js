@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
     // Trying to send another response after a delay
     setTimeout(() => {
       res.end('\nSecond response'); // Sending the second response
-    }, 20000);
-  }, 20000);
+    }, 1000);
+  }, 1000);
 });
 
 app.listen(port, () => {
